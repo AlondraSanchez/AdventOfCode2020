@@ -1,7 +1,7 @@
 class Puzzle5(path: String) : GeneralPuzzle(path) {
     fun solve(){
-        var row = 0
-        var column = 0
+        var row: Int
+        var column: Int
         var higher = 0
         var aux: String
         for (string in list){
@@ -18,7 +18,7 @@ class Puzzle5(path: String) : GeneralPuzzle(path) {
                 higher = ((row*8)+column)
             }
         }
-        println("$row, $column, $higher")
+        println("Answer #1: $higher")
     }
 
     fun solvePartTwo(){
@@ -41,7 +41,7 @@ class Puzzle5(path: String) : GeneralPuzzle(path) {
 
         for (id in ids){
             if(ids.contains(id+2) && !ids.contains(id+1)){
-                println(id+1)
+                println("Answer #2: ${id+1}")
                 break
             }
         }
