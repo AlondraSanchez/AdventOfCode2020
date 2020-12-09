@@ -2,7 +2,7 @@ class Puzzle9(path: String) : GeneralPuzzle(path) {
     private var array: ArrayList<Int> = ArrayList() // has 25 numbers
     private val preamble = 25
     private var badNumber = 0
-    private var index = 0
+
     fun solve(){
         getNumbers()
         var i = preamble
@@ -13,7 +13,6 @@ class Puzzle9(path: String) : GeneralPuzzle(path) {
                 array.removeAt(0)
                 array.add(number)
             } else {
-                index = i
                 badNumber = number
                 println("Answer #1: $number")
                 break
