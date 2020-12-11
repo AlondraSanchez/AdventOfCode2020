@@ -1,3 +1,7 @@
+package week1
+
+import GeneralPuzzle
+
 class Puzzle5(path: String) : GeneralPuzzle(path) {
     fun solve(){
         var row: Int

@@ -1,3 +1,7 @@
+package week2
+
+import GeneralPuzzle
+
 class Puzzle8(path: String) : GeneralPuzzle(path) {
     private var finalValue = 0
     fun solve(){

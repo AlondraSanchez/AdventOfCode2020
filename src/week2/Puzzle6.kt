@@ -1,3 +1,7 @@
+package week2
+
+import Files
+
 class Puzzle6 (path:String){
     private val file = Files(path)
     private val letters = file.openAnfMergeLines()

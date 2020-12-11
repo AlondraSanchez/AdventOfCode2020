@@ -1,3 +1,7 @@
+package week1
+
+import GeneralPuzzle
+
 class Puzzle3(path: String) : GeneralPuzzle(path) {
 
     fun solve(x: Int, y: Int): Short {

@@ -1,3 +1,6 @@
+package week2
+
+import GeneralPuzzle
 import kotlin.collections.ArrayList
 
 class Puzzle10(path: String) : GeneralPuzzle(path) {
@@ -27,7 +30,6 @@ class Puzzle10(path: String) : GeneralPuzzle(path) {
         var group = 0
         val dif = getDifferences()
         var res:Long = 1
-        println()
         for (x in dif){
             if(x == 1 ){
                 group++

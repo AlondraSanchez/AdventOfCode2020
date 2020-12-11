@@ -1,3 +1,7 @@
+package week1
+
+import GeneralPuzzle
+
 class Puzzle2(path: String) : GeneralPuzzle(path) {
     fun solve() {
         var password: String

@@ -1,14 +1,18 @@
+import week1.*
+import week2.*
+
 fun main(){
-    val day1 = Puzzle1("input.txt")
-    val day2 = Puzzle2("input2.txt")
-    val day3 = Puzzle3("input3.txt")
-    val day4 = Puzzle4("input4.txt")
-    val day5 = Puzzle5("input5.txt")
-    val day6 = Puzzle6("input6.txt")
-    val day7 = Puzzle7("input7.txt")
-    val day8 = Puzzle8("input8.txt")
-    val day9 = Puzzle9("input9.txt")
-    val day10 = Puzzle10("input10.txt")
+    val day1 = Puzzle1("puzzle_inputs/input.txt")
+    val day2 = Puzzle2("puzzle_inputs/input2.txt")
+    val day3 = Puzzle3("puzzle_inputs/input3.txt")
+    val day4 = Puzzle4("puzzle_inputs/input4.txt")
+    val day5 = Puzzle5("puzzle_inputs/input5.txt")
+    val day6 = Puzzle6("puzzle_inputs/input6.txt")
+    val day7 = Puzzle7("puzzle_inputs/input7.txt")
+    val day8 = Puzzle8("puzzle_inputs/input8.txt")
+    val day9 = Puzzle9("puzzle_inputs/input9.txt")
+    val day10 = Puzzle10("puzzle_inputs/input10.txt")
+    val day11 = Puzzle11("puzzle_inputs/input11.txt")
 
     println("Type the day")
     val selectedDay = readLine()?.toInt()
@@ -53,6 +57,10 @@ fun main(){
         10 ->{
             day10.solve()
             day10.solvePartTwo()
+        }
+        11 ->{
+            day11.solve()
+            day11.solvePartTwo()
         }
         else -> println("We haven't reached that day!")
     }

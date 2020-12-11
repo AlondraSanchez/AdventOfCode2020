@@ -1,3 +1,7 @@
+package week2
+
+import GeneralPuzzle
+
 class Puzzle9(path: String) : GeneralPuzzle(path) {
     private var array: ArrayList<Int> = ArrayList() // has 25 numbers
     private val preamble = 25
