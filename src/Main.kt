@@ -13,6 +13,7 @@ fun main(){
     val day9 = Puzzle9("puzzle_inputs/input9.txt")
     val day10 = Puzzle10("puzzle_inputs/input10.txt")
     val day11 = Puzzle11("puzzle_inputs/input11.txt")
+    val day12 = Puzzle12("puzzle_inputs/input12.txt")
 
     println("Type the day")
     val selectedDay = readLine()?.toInt()
@@ -61,6 +62,10 @@ fun main(){
         11 ->{
             day11.solve()
             day11.solvePartTwo()
+        }
+        12 ->{
+            day12.solve()
+            day12.solvePartTwo()
         }
         else -> println("We haven't reached that day!")
     }
