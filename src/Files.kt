@@ -49,4 +49,19 @@ class Files (private val path: String){
         }
         return text.substring(0, text.length-1)
     }
+
+    fun openBuses(): String{
+        var text = ""
+        try {
+            val input = Scanner(File(path))
+            while (input.hasNextLine()) {
+                val line: String = input.nextLine()
+                text += line + "\n"
+            }
+            input.close()
+        } catch (ex: Exception) {
+            ex.printStackTrace()
+        }
+        return text.substring(0, text.length-1)
+    }
 }
