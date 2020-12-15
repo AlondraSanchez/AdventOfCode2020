@@ -1,6 +1,6 @@
 import week1.*
 import week2.*
-import week3.Puzzle13
+import week3.*
 
 fun main(){
     val day1 = Puzzle1("puzzle_inputs/input.txt")
@@ -16,6 +16,7 @@ fun main(){
     val day11 = Puzzle11("puzzle_inputs/input11.txt")
     val day12 = Puzzle12("puzzle_inputs/input12.txt")
     val day13 = Puzzle13("puzzle_inputs/input13.txt")
+    val day14 = Puzzle14("puzzle_inputs/input14.txt")
 
     println("Type the day")
     val selectedDay = readLine()?.toInt()
@@ -72,6 +73,11 @@ fun main(){
         13 ->{
             day13.solve()
             day13.solvePartTwo()
+        }
+        14 ->{
+            day14.solve()
+            println("PLease give it time (about 20-30secs), it's calculating something REALLY complex ;_;")
+            day14.solvePartTwo()
         }
         else -> println("We haven't reached that day!")
     }
